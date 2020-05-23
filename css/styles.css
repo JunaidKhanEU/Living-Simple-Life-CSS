@@ -1,0 +1,89 @@
+/* 
+main points
+ main-container max-width:930px;
+ mobilefirst so use min-width queries
+ colors
+ white = #fff
+ offwhite = f8f8f8
+ lightgrey=#ebebeb
+ darkgrey=707070
+ darkergrey=717171
+ lightblue=#1792D2
+ darkblue=##143774
+
+
+*/
+
+/* basic setup */
+:root{
+    --white:#fff;
+    --offwhite : f8f8f8;
+    --lightgrey:#ebebeb;
+    --darkgrey:#707070;
+    --darkergrey:#717171;
+    --lightblue:#1792D2;
+    --arkblue:#143774;
+}
+body{
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--darkergrey);
+    margin: 0;
+}
+h1, h2, h3, h4,h5,h6,p, li{
+    margin:0;
+}
+
+p{
+    font-size: 1.125rem;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+a{
+    display: inline-block;
+}
+/* basic setup ends */
+
+/* layout style start */
+
+.container{
+    width: 90%;
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: var(--offwhite);
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 6.46em;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--darkergrey);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 40px;
+   
+}
+
+.active{
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--darkergrey);    
+}
+/* layout style ends */
