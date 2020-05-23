@@ -328,6 +328,12 @@ footer p{
         justify-content: center;
         align-items: center;
     }
+    .feature-article .image-container img{
+        max-width: 100%;
+        object-fit: cover;
+        object-position: right bottom;
+        max-height:750px;
+    }
 
     aside{
         width: 100%;
@@ -335,6 +341,9 @@ footer p{
         
     }
     main{
+        width: 100%;
+    }
+    .article .article-container{
         width: 100%;
     }
     aside .about-me img{
@@ -403,4 +412,12 @@ footer p{
         object-fit: cover;
     }
     /* content ends*/
+}
+
+
+@media screen and (max-width:490px){
+    .article .image-container p{
+        text-align: right;
+        margin-bottom: 1.5em;
+    }
 }
