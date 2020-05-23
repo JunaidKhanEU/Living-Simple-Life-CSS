@@ -320,7 +320,55 @@ footer p{
 /* footer ends          */
 
 /* media query for mobile devices */
-@media screen and (max-width:715px){
+
+@media screen and (max-width:1000px){
+    /* content start */
+    .content-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside{
+        width: 100%;
+        max-width: 100%;
+        
+    }
+    main{
+        width: 100%;
+    }
+    aside .about-me img{
+        max-width: 428px;
+        max-height: 133px;
+
+    }
+    aside .recent-post img{
+        max-width: 100%;
+        max-height: 150px;
+        object-position: center;
+        object-fit: cover;
+    }
+    aside .recent-post{
+        align-items: flex-start;
+    }
+    .article{
+        flex-direction: column;
+    }
+    .article .image-container{
+        width: 100%;
+    }
+    .article .image-container img{
+        margin-bottom: 1.2em;
+    }
+    .article .image-container p{
+        text-align: right;
+        margin-bottom: -1.5em;
+    }
+    /* content ends */
+
+}
+
+@media screen and (max-width:800px){
     /* layout  start */
     header nav {
         flex-direction: column;
@@ -346,4 +394,13 @@ footer p{
         margin-bottom: 2.5325rem;
     }
     /* layout ends */
+
+    /* content start*/
+    aside .recent-post img{
+        max-width: 26.25rem;
+        max-height: 5.4375rem;
+        object-position: center;
+        object-fit: cover;
+    }
+    /* content ends*/
 }
