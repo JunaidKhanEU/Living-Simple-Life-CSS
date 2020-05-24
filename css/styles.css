@@ -319,6 +319,39 @@ footer p{
 }
 /* footer ends          */
 
+
+/* about-me page */
+.about-article .image-container img{
+    max-height: 308px;
+    object-fit: cover;
+}
+.about-article-container{
+    padding: 56px 0 96px 0;
+}
+
+.about-article-container h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--darkblue);
+    margin-bottom: 1em;
+}
+
+.about-article-container p{ 
+
+    font-weight: 300;
+    margin-right: 14px;
+    margin-bottom: 1em;
+}
+
+.about-article-container h3{
+    font-family: lora  serif;
+    color: var(--lightblue);
+    margin-bottom: 1em;
+}
+
+strong{
+    font-weight: 800;
+}
 /* media query for mobile devices */
 
 @media screen and (max-width:1000px){
